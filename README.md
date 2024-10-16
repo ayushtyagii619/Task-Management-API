@@ -81,6 +81,17 @@ Request Body:
 ## Example:
 GET /api/tasks/?status=pending&priority=high&ordering=-due_date
 
+5. # Sorting
+You can sort tasks by:
+    - due_date: Sort by the task due date.
+    - priority: Sort by task priority (low → high).
+    - created_at: Sort by creation date.
+## Example:
+GET /api/tasks/?ordering=due_date
+
+To sort in descending order, use a - before the field:
+GET /api/tasks/?ordering=-priority
+
 
 
 
