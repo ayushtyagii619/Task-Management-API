@@ -64,7 +64,15 @@ Request Body:
     "password": "password123"
 }
 
-
+3. # CRUD Operation:
+   urlpatterns = [
+   
+    path('tasks/create/',CreateTaskApiView.as_view(),name='create-task'), #create task post method
+    path('tasks/',TaskListApiView.as_view(),name='tasks-list'), #list of tasks get method
+    path('tasks/<int:id>/',TaskListByIdApiView.as_view(),name='list-id-tasks'), #list of task by their id get method
+    path('tasks/update/<int:id>/',TaskUpdateApiView.as_view(),name='task-update'), #update task by id put method
+    path('tasks/delete/<int:id>/',TaskDeleteApiView.as_view(),name='task-delete') #delete task by id delete method
+]
 
 
 
