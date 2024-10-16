@@ -92,6 +92,11 @@ GET /api/tasks/?ordering=due_date
 To sort in descending order, use a - before the field:
     - GET /api/tasks/?ordering=-priority
 
+# Permissions
+- **Only authenticated users can perform CRUD operations.**
+- **The user can create, update, retrieve, and delete their tasks.**
+- **Once a task's status is marked as completed, it cannot be updated.**
+
 
 
 
