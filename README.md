@@ -97,6 +97,9 @@ To sort in descending order, use a - before the field:
 - **The user can create, update, retrieve, and delete their tasks.**
 - **Once a task's status is marked as completed, it cannot be updated.**
 
+Made with ❤️ by Ayush
+- **ayush952877@gmail.com**
+
 
 
 
