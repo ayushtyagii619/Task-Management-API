@@ -74,6 +74,13 @@ Request Body:
     path('tasks/delete/<int:id>/',TaskDeleteApiView.as_view(),name='task-delete') #delete task by id delete method
 ]
 
+4. # Query Parameters:
+    - status: Filter by task status (pending, in-progress, completed)
+    - priority: Filter by task priority (low, medium, high)
+    - ordering: Sort tasks by due_date, priority, or created_at. Use - for descending order.
+## Example:
+GET /api/tasks/?status=pending&priority=high&ordering=-due_date
+
 
 
 
