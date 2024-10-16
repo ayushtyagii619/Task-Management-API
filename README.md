@@ -47,6 +47,7 @@ This project is a Task Management API built with Django and Django REST Framewor
 ## User Authentication
 1. # Register:
    POST /api/register/
+
 Request Body:
 {
     "email": "user@example.com",
@@ -56,6 +57,7 @@ Request Body:
 
 2. # Login:
     POST /api/login/
+
 Request Body:
 {
     "email": "user@example.com",
